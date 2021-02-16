@@ -1,0 +1,46 @@
+body{
+    margin: 15px;
+}
+
+.box{
+    border: 2px solid black;
+    margin-top: 15px;
+    padding: 5%;
+}
+
+.navbar{
+    margin-left: -46px;
+    
+}
+
+.nominativi{
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+
+#txtCognome,#nome, #cognome, #btnVisualizza{
+    margin-top: 15px;
+}
+
+#txtNome,#txtCognome{
+    text-transform: capitalize;
+}
+
+#littleScreen{
+    display: none;
+    width: 100%;
+}
+
+/* se la larghezza massima dello schermo scende sotto gli 800px allora mostro a schermo la versione per schermi piccoli */
+@media screen and (max-width: 800px) {
+    #littleScreen {
+        display: block;
+    }
+
+    #bigScreen{
+        display: none;
+    }
+}
